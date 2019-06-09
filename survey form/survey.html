@@ -1,0 +1,197 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>survey-form</title>
+     <form action=""></form></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Survey form</h1>
+  <section>
+    <p id="description">Letus know how can we improve  our service</p>
+    <form action="" id="survey-form">
+      <div id="row">
+        <div id="left-div">
+          <label for="name" id="name-label">*Name:</label>
+        </div>
+        <div id="right-div">
+          <input type="text" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div id="row">
+        <div id="left-div">
+          <label id="email-label" for="email">*Email:</label>
+        </div>
+        <div id="right-div">
+          <input type="email" id="email" class="input-field" placeholder="Email required" required>
+        </div>
+      </div>
+      <div id="row">
+        <div id="left-div">
+          <label id="number-label" for="number">Age:</label>
+        </div>
+        <div id="right-div">
+          <input min="1" max="120" type="number" id="number" class="input-field" placeholder="Age">
+        </div>
+      </div>
+      <div id="row">
+        <div id="left-div">
+          <label id="dropdown-label" for="dropdown">
+            Which option best describe you?
+          </label>
+        </div>
+        <div id="right-div">
+          <select name="" id="dropdown" class="dropdown" autofocus>
+            <option value="" disabled selected>Select one option</option>
+            <option value="">student</option>
+            <option value="">Full Time Job</option>
+            <option value="">Full Time Learner</option>
+            <option value="">Prefer not to say</option>
+            <option value="">Other</option>
+          </select>
+        </div>
+      </div>
+      <div id="row">
+        <div id="left-div">
+          <label id="good-label" for="good">What do you like most about us:</label>
+        </div>
+        <div id="right-div">
+          <select name="" id="good" class="dropdown">
+            <option value="" disabled selected>Choose one</option>
+            <option value="">user interface</option>
+            <option value="">content</option>
+            <option value="">Timely modification</option>
+            <option value="">discuss forum</option>
+            <option value="">24*7 server</option>
+          </select>
+        </div>
+      </div>
+      <div id="row">
+        <div id="left-div" style="padding-top: 20px">
+          <label id="recomended-label" for="recomended">Did you ever recomended our site to anyone?</label>
+        </div>
+        <div id="right-div" class="remove-list-style">
+          <ul>
+            <li>
+              <label>
+                <input id="yes" type="radio" value="1" name="radio-btn">
+                Yes
+              </label>
+            </li>
+            <li>
+              <label >
+                              <input type="radio" value="2" name="radio-btn" id="No">
+                No
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="row">
+          <div id="left-div" style="padding-top: 20px">
+            <label id="recomended-label" for="recomended">Can you donate us so that we can produce more free content?</label>
+          </div>
+          <div id="right-div" class="remove-list-style">
+            <ul>
+              <li>
+                <label >
+                   <input value="1" id="yes" type="radio" name="radio-bton">
+                   Yes
+                </label>
+              </li>
+              <li>
+                <label >
+                  <input  value="2" type="radio" name="radio-bton" id="No">
+                  No
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="row">
+            <div id="left-div">
+              <label id="dropdown-label" for="dropdown">
+                Want to donate us choose one:
+              </label>
+            </div>
+            <div id="right-div">
+              <select name="" id="dropdown" class="dropdown" autofocus>
+                <option value="" disabled selected>Select one option</option>
+                <option value="">Rs.1000/-</option>
+                <option value="">Rs.2000/-</option>
+                <option value="">Rs.3000/-</option>
+                <option value="">Rs.5000/-</option>
+                <option value="">May be later</option>
+              </select>
+            </div>
+      </div>
+
+    
+     <div id="row">
+        <div id="left-div" style="padding-top: 20px">
+          <label id="recomended-label" for="recomended">What are the courses you have completed through our website</label>
+        </div>
+        <div id="right-div" class="remove-list-style">
+          <ul>
+            <li>
+              <input id="yes" type="checkbox" value="1" name="radio-btn">
+              <label for="yes">c</label>
+            </li>
+            <li>
+              <input type="checkbox" name="radio-btn" value="2" id="No">
+              <label for="No">c++</label>
+            </li>
+            <li>
+              <input id="yes" type="checkbox" value="3" name="radio-btn">
+              <label for="yes">Java</label>
+            </li>
+            <li>
+              <input id="yes" type="checkbox" value="4" name="radio-btn">                 
+              <label for="yes">Python</label>
+            </li>
+            <li>
+              <input id="yes" type="checkbox" value="5" name="radio-btn">
+              <label for="yes">Object oriented programing</label>
+            </li>
+            <li>
+              <input id="yes" type="checkbox" value="5" name="radio-btn">
+              <label for="yes">Javascript</label>
+            </li>
+            <li>
+              <input id="yes" type="checkbox" value="6" name="radio-btn">
+              <label for="yes">HTML & css</label>
+            </li>
+            <li>
+              <input id="yes" type="checkbox" value="7" name="radio-btn">
+              <label for="yes">Front-end</label>
+            </li>
+            <li>
+              <input id="yes" type="checkbox" value="8" name="radio-btn">
+              <label for="yes">Back-end</label>
+            </li>
+            <li>
+              <input id="yes" type="checkbox" value="9" name="radio-btn">
+              <label for="yes">React.js</label>
+           </li>
+
+          </ul>
+        </div>
+      </div>
+      <div id="row">
+        <div id="left-div">
+          <label for="textarea">Any comment or Suggestion?</label>
+        </div>
+        <div id="right-div">
+          <textarea name="comment" id="comment" style="max-width:100%;height:75px;" placeholder="Enter your comment"></textarea>
+        </div>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+      </form>
+  </section>
+  
+</body>
+</html>

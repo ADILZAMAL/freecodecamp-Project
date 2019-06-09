@@ -1,0 +1,74 @@
+#left-div{
+  display:inline-block;
+  width:40%;
+  text-align: right;
+  padding: 5px;
+  padding-top: 15px;
+ vertical-align: top;
+}
+#right-div{
+  display: inline-block;
+  width:48%;
+  padding: 5px;
+  text-align: left;
+}
+.input-field{
+ height: 30px;
+ width:70%;
+ padding:5px;
+ margin:5px; 
+}
+body{
+  background-color: #A9D7D1;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#2E2E2E;
+}
+#title{
+  text-align:center;
+}
+section{
+  background-color:#fff;
+  width:75%;
+  margin: 0 auto;
+  max-width: 900px;
+  border-radius: 4px;
+  padding:15px;
+}
+section p{
+  text-align:center;
+}
+.dropdown{
+  width:150px;
+  height: 35px;
+  margin: 5px;
+  
+}
+.remove-list-style ul{
+  list-style-type:none;
+  margin-left:-40px;
+}
+.remove-list-style ul li{
+  padding-bottom:10px;
+}
+#submit{
+  background-color:#59ACE0;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #59ACE0;
+  border-radius: 4px;
+  width:80px;
+  height: 40px;
+}
+@media(max-width:768px)
+{
+  #left-div{
+    display: block;
+    width:100%;
+    text-align: left;
+  }
+  #right-div{
+    display: block;
+    width:100%;
+    text-align: left;
+  }
+}
