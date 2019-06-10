@@ -1,0 +1,154 @@
+*{
+
+  font-family: Arial, Helvetica, sans-serif
+}
+body{
+  background-color: #EEEEEE;
+}
+#header{
+  background-color: #3498db;
+  display: flex;
+  height: 63px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+#posn{
+  position: relative;
+  top:63px;
+}
+#image{
+  width:100px;  
+}
+nav{
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav li a{
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600px;
+}
+nav li{
+  list-style: none
+}
+#form{
+  padding:20px 20px 20px 20px;
+  text-align: center;
+}
+form label{
+  padding-right:5px;
+}
+#email{
+  border:2px solid #EEEEEE;
+  border-radius: 25px;
+  height: 20px;
+  padding:5px;
+}
+#submit{
+  background-color:#3498db;
+  width:60px;
+  height: 30px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 8px;
+}
+#row1{
+  display: flex;
+  align-items: center;
+
+}
+#row2{
+  display:flex;
+  align-items: center;
+}
+#left{
+  flex:1 1 50%;
+  text-align: center;
+  padding: 10px;
+}
+#right{
+  flex: 1 1 50%;
+  text-align: center;
+  padding: 10px;
+}
+#left img{
+  display: block;
+  margin: 0 auto;
+}
+#right img{
+  display: block;
+  margin: 0 auto;
+}
+
+#right p{
+  margin: 10px 150px 0 150px;
+}
+#left p{
+  margin: 10px 150px 0 150px;
+}
+#services h2{
+  text-align: center;
+}
+#services{
+  text-align: center;
+}
+#services ol{
+  display: inline-table;
+}
+#services ol li{
+  padding: 0 0 30px 0;
+}
+#aboutus{
+  padding:0 20% 0 20%;
+  text-align: center;
+}
+#aboutus h2{
+  text-align: center;
+}
+#aboutus p{
+  font-size: 20px;
+  font-weight: 100;
+
+}
+#contactus{
+  display: flex;
+  justify-content: space-around;
+  padding-top:10px;
+}
+@media(max-width:768px)
+{
+#row1{
+  flex-direction: column;
+}
+#left{
+  width:100%;
+}
+#left img{
+  width: 100%;
+  margin: 0 auto
+
+}
+#right img{
+  width:100%;
+  display: block;
+  margin: 0 auto
+} 
+#right p{
+  margin: 10px;
+}
+#left p{
+  margin: 10px;
+}
+#right{
+  width:100%;
+}
+#row2{
+  flex-direction:column;
+}
+
+}
