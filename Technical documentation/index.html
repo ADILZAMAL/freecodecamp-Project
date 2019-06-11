@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Technical Documentation Page
+  </title>
+</head>
+<body>
+  <div id="left">
+    <nav id="navbar">
+      <header>
+        <h1>C -Language</h1>
+        <ul>
+          <li>
+            <a href="#C_-_Language_History" class="nav-link">
+              <h3>C - Language History</h3>
+            </a>
+          </li>
+          <li>
+              <a href="#C_-_Printf_and_Scanf" class="nav-link">
+                <h3>C - Printf and  Scanf</h3>
+              </a>
+              
+          </li>
+          <li>
+              <a href="#C_-_Data_Types" class="nav-link">
+               <h3>C - Data Types</h3>
+              </a>
+
+          </li>
+          <li>
+              <a href="#C_-_Constant" class="nav-link">
+                <h3>C - Constant</h3>
+              </a>
+
+          </li>
+          <li>
+              <a href="#C_-_Variable" class="nav-link">
+                <h3>C - Variable</h3>
+              </a>
+
+          </li>
+          <li>
+              <a href="#C_-_Decision_Control_Statement" class="nav-link">
+                <h3>C - Decision Control Statement</h3>
+              </a>
+
+          </li>
+          <li>
+              <a href="#C_-_Operation_and_Expression" class="nav-link">
+                <h3>C - Operation and Expression</h3>
+              </a>
+
+          </li>
+          <li>
+              <a href="#C_-_Loop_Control_Statement" class="nav-link">
+                <h3>C - Loop Control Statement</h3>
+              </a>
+
+          </li>
+          <li>
+              <a href="#C_-_Case_Control_Statement" class="nav-link">
+                <h3>C - Case Control Statement</h3>
+              </a>
+
+          </li>
+          <li>
+              <a href="#C_-_Function" class="nav-link">
+                <h3>C - Function</h3>
+              </a>
+
+          </li>
+          <li>
+              <a href="#C_-_Pointer" class="nav-link">
+                <h3>C - Pointer</h3>
+              </a>
+
+          </li>
+          <li>
+              <a href="#C_-_Arithmetic_Function" class="nav-link">
+                <h3>C - Arithmetic Function</h3>
+              </a>
+
+          </li>
+          
+        </ul>
+      </header>
+    </nav>
+  </div>
+  <div id="right">
+  <main id="main-doc">
+    <section class="main-section" id="C_-_Language_History">
+      <header>
+          <h1>C - Language History</h1>
+      </header>
+      <ul>
+        <li><p>The C programming language is a structure oriented programming language, developed at Bell Laboratories in 1972 by Dennis Ritchie</p></li>
+        <li>
+          <p>C programming language features were derived from an earlier language called “B” (Basic Combined Programming Language – BCPL)</p>
+        </li>
+        <li>
+          <p>C language was invented for implementing UNIX operating system</p>
+        </li>
+        <li>
+          <p>In 1978, Dennis Ritchie and Brian Kernighan published the first edition “The C Programming Language” and commonly known as K&R C</p>
+        </li>
+        <li>
+          <p>In 1983, the American National Standards Institute (ANSI) established a committee to provide a modern, comprehensive definition of C. The resulting definition, the ANSI standard, or “ANSI C”, was completed late 1988.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="C_-_Printf_and_Scanf">
+      <header>      
+        <h1>C - Printf and Scanf</h1>
+      </header>
+      <ul>
+        <li>
+          <p>printf() and scanf() functions are inbuilt library functions in C programming language which are available in C library by default. These functions are declared and related macros are defined in “stdio.h” which is a header file in C language.</p>
+        </li>
+        <li>
+          <p>We have to include “stdio.h” file as shown in below C program to make use of these printf() and scanf() library functions in C language.</p>
+        </li>
+      </ul>
+      <h4>1. PRINTF() FUNCTION IN C LANGUAGE:</h4>
+      <ul>
+        <li>
+          <p>In C programming language, printf() function is used to print the “character, string, float, integer, octal and hexadecimal values” onto the output screen.</p>
+        </li>
+        <li>
+          <p>We use printf() function with %d format specifier to display the value of an integer variable.</p>
+        </li>
+        <li>
+          <p>Similarly %c is used to display character, %f for float variable, %s for string variable, %lf for double and %x for hexadecimal variable.</p>
+        </li>
+        <li>
+          <p>To generate a newline,we use “\n” in C printf() statement.</p>
+        </li>
+        <li>
+          <p>C language is case sensitive. For example, printf() and scanf() are different from Printf() and Scanf(). All characters in printf() and scanf() functions must be in lower case.</p>
+        </li>
+      </ul>
+      <h5>EXAMPLE PROGRAM FOR C PRINTF() FUNCTION:</h5>
+      <code>
+          #include <stdio.h> <br>
+          int main() <br>
+          {<br>
+             char ch = 'A';<br>
+             char str[20] = "fresh2refresh.com";<br>
+             float flt = 10.234;<br>
+             int no = 150;<br>
+             double dbl = 20.123456;<br>
+             printf("Character is %c \n", ch);<br>
+             printf("String is %s \n" , str);<br>
+             printf("Float value is %f \n", flt);<br>
+             printf("Integer value is %d\n" , no);<br>
+             printf("Double value is %lf \n", dbl);<br>
+             printf("Octal value is %o \n", no);<br>
+             printf("Hexadecimal value is %x \n", no);<br>
+             return 0;<br>
+          }<br>
+      </code>
+      <h5>output</h5>
+      <code>
+          Character is A <br>
+          String is fresh2refresh.com <br>
+          Float value is 10.234000 <br>
+          Integer value is 150<br>
+          Double value is 20.123456<br>
+          Octal value is 226<br>
+          Hexadecimal value is 96<br>
+      </code>
+      <h4>2. SCANF() FUNCTION IN C LANGUAGE:</h4>
+      <ul>
+        <li>
+          <p>In C programming language, scanf() function is used to read character, string, numeric data from keyboard</p>
+        </li>
+        <li>
+          <p>Consider below example program where user enters a character. This value is assigned to the variable “ch” and then displayed.</p>
+        </li>
+        <li>
+          <p>Then, user enters a string and this value is assigned to the variable “str” and then displayed.</p>
+        </li>
+      </ul>
+      <h5>EXAMPLE PROGRAM FOR PRINTF() AND SCANF() FUNCTIONS IN C PROGRAMMING LANGUAGE:</h5>
+      <code>
+#include <stdio.h> <br>
+int main()<br>
+{<br>
+   char ch;<br>
+   char str[100];<br>
+   printf("Enter any character \n");<br>
+   scanf("%c", &ch);<br>
+   printf("Entered character is %c \n", ch);<br>
+   printf("Enter any string ( upto 100 character ) \n");<br>
+   scanf("%s", &str);<br>
+   printf("Entered string is %s \n", str);<br>
+}<br>
+      </code>
+      <h5>Output</h5>
+      <code>
+        
+        Enter any character<br>
+        a<br>
+        Entered character is a<br>
+        Enter any string ( upto 100 character )<br>
+        hai<br>
+        Entered string is hai<br>
+      </code>
+    </section>
+    <section class="main-section" id="C_-_Data_Types">
+      <header>
+        <h1>C - Data Types</h1>
+
+      </header>
+      <ul>
+        <li>
+          <p>C data types are defined as the data storage format that a variable can store a data to perform a specific operation.</p>
+        </li>
+        <li>
+          <p>Data types are used to define a variable before to use in a program.</p>
+        </li>
+        <li>
+          <p>Size of variable, constant and array are determined by data types.</p>
+        </li>
+      </ul>
+      <h5>C – DATA TYPES:</h5>
+      <p>There are four data types in C language. They are</p>
+      <table border="1">
+        <tr>
+            <th>Types</th>
+            <th>Data Types</th>
+        </tr>
+        <tr>
+          <td>Basic data types</td>
+          <td>int, char, float, double</td>
+        </tr>
+        <tr>
+          <td>Enumeration data type</td>
+          <td>	enum</td>
+        </tr>
+        <tr>
+          <td>Derived data type</td>
+          <td>pointer, array, structure, union</td>
+        </tr>
+        <tr>
+          <td>Void data type</td>
+          <td>	void</td>
+        </tr>
+        
+      </table>
+    </section>
+    <section class="main-section" id="C_-_Constant">
+      <header>
+        <h1>C - Constant</h1>
+
+      </header>
+      <ul>
+        <li>
+          <p>C Constants are also like normal variables. But, only difference is, their values can not be modified by the program once they are defined.</p>
+        </li>
+        <li>
+          <p>Constants refer to fixed values. They are also called as literals
+            </p>
+        </li>
+        <li>
+          <p>Constants may be belonging to any of the data type.</p>
+        </li>
+        <li>
+          <p>Constants may be belonging to any of the data type.</p>
+        </li>
+      </ul>
+      <code>const data_type variable_name; (or) const data_type *variable_name;</code>
+      <ol>
+        <li>
+          <p>Integer constants</p>
+        </li>
+        <li>
+          <p>Real or Floating point constants</p>
+        </li>
+        <li>
+          <p>Octal & Hexadecimal constants</p>
+        </li>
+        <li>
+          <P>Character constants</P>
+        </li>
+        <li>
+          <P>String constants</P>
+        </li>
+        <li>
+          <P>Backslash character constants</P>
+        </li>
+      </ol>
+      <table border="1">
+        <tr>
+          <th>Constant type</th>
+          <th>Constant type</th>
+        </tr>
+        <tr>
+          <td>Integer constants</td>
+          <td>int (53, 762, -478 etc )<br>
+              unsigned int (5000u, 1000U etc)<br>
+              long int, long long int<br>
+              (483,647 2,147,483,680)</td>
+        </tr>
+        <tr>
+          <td>
+              Real or Floating point constants
+          </td>
+          <td>
+              float (10.456789)
+              doule (600.123456789)
+          </td>
+        </tr>
+        <tr>
+          <td>Octal constant</td>
+          <td>	int (Example: 013 /*starts with 0 */)</td>
+        </tr>
+        <tr>
+          <td>Hexadecimal constant</td>
+          <td>nt (Example: 0x90 /*starts with 0x*/)</td>
+        </tr>
+        <tr>
+          <td>character constants</td>
+          <td>char (Example: ‘A’, ‘B’, ‘C’)</td>
+        </tr>
+        <tr>
+          <td>string constants</td>
+          <td>	
+              char (Example: “ABCD”, “Hai”)</td>
+        </tr>
+      </table>
+    </section>
+    <section class="main-section" id="C_-_Variable">
+      <header>
+        <h1>C - Variable</h1>
+
+      </header>
+      <ul>
+        <li>
+          <p>C variable is a named location in a memory where a program can manipulate the data. This location is used to hold the value of the variable.</p>
+        </li>
+        <li>
+          <p>The value of the C variable may get change in the program.</p>
+        </li>
+        <li>
+          <p>C variable might be belonging to any of the data type like int, float, char etc.</p>
+        </li>
+      </ul>
+      <h5>RULES FOR NAMING C VARIABLE:</h5>
+      <ol>
+        <li>
+          <p>Variable name must begin with letter or underscore.</p>
+        </li>
+        <li>
+          <p>Variables are case sensitive</p>
+        </li>
+        <li>
+          <p>They can be constructed with digits, letters.</p>
+        </li>
+        <li>
+          <p>No special symbols are allowed other than underscore.</p>
+        </li>
+        <li>
+          <P>
+              sum, height, _value are some examples for variable name</P>
+        </li>
+      </ol>
+    </section>
+    <section class="main-section" id="C_-_Decision_Control_Statement">
+      <header>
+          <h1>C - Decision Control Statement</h1>
+
+      </header>
+      <ul>
+        <li>
+          <p>In decision control statements (if-else and nested if), group of statements are executed when condition is true.  If condition is false, then else part statements are executed.</p>
+        </li>
+        <li>
+          <p>There are 3 types of decision making control statements in C language. They are,</p>
+        </li>
+      </ul>
+      <ol>
+        <li>
+          <p>  if statements</p>
+        </li>
+        <li>
+          <p> if else statement</p>
+        </li>
+        <li>
+          <p> nested if statements</p>
+        </li>
+      </ol>
+      <h5>EXAMPLE PROGRAM FOR IF STATEMENT IN C:</h5>
+      <code>
+          int main() <br>
+          {<br>
+            int m=40,n=40;<br>
+            if (m == n)<br>
+            {<br>
+            printf("m and n are equal");<br>
+            }<br>
+          }<br>
+      </code>
+      <h5>Output</h5>
+      <code>
+        
+       m and n are not equal
+      </code>
+      <h5>EXAMPLE PROGRAM FOR NESTED IF STATEMENT IN C:</h5>
+      <code>
+          #include <stdio.h> <br>
+          int main()<br>
+          {<br>
+            int m=40,n=20;<br>
+            if (m>n) {<br>
+           printf("m is greater than n");<br>
+            }<br>
+            else if(m<n) { <br>
+            printf("m is less than n"); <br>
+            }<br>
+            else { <br>
+            printf("m is equal to n"); <br>
+            }<br>
+          }<br>
+      </code>
+      <h5>Output</h5>
+      <code>
+          m is greater than n
+      </code>
+      <h5></h5>
+    </section>
+    <section class="main-section" id="C_-_Operation_and_Expression">
+      <header>
+          <h1>C - Operation and Expression</h1>
+
+      </header>
+      <ul>
+        <li>
+           <p>The symbols which are used to perform logical and mathematical operations in a C program are called C operators.</p> 
+        </li>
+        <li>
+          <p>These C operators join individual constants and variables to form expressions.</p>
+        </li>
+        <li>
+          <p>Operators, functions, constants and variables are combined together to form expressions.</p>
+        </li>
+        <li>
+          <p>Consider the expression A + B * 5. where, +, * are operators, A, B  are variables, 5 is constant and A + B * 5 is an expression.</p>
+        </li>
+      </ul>
+      <h5>TYPES OF C OPERATORS:</h5>
+      <ol>
+        <li>
+          <P>Arithmetic operators</P>
+        </li>
+        <li>
+          <P>Assignment operators</P>
+        </li>
+        <li><P>Relational operators</P></li>
+        <li><P>Relational operators</P></li>
+        <li><P>Bit wise operators</P></li>
+        <li><P>Conditional operators (ternary operators)</P></li>
+        <li><P>Increment/decrement operators</P></li>
+        <li><P>Special operators</P></li>
+      </ol>
+    </section>
+    <section class="main-section" id="C_-_Loop_Control_Statement">
+      <header>
+          <h1>C - Loop Control Statement</h1>
+
+      </header>
+      <P>Loop control statements in C are used to perform looping operations until the given condition is true. Control comes out of the loop statements once condition becomes false.</P>
+      <h5>TYPES OF LOOP CONTROL STATEMENTS IN C:</h5>
+      <ol><li>for</li>
+      <li>while</li>
+      <li>do-while</li></ol>
+      <h5>EXAMPLE PROGRAM (FOR LOOP) IN C:</h5>
+      <code>
+          #include <stdio.h> <br>
+ 
+              int main()<br>
+              {<br>
+                int i; <br>
+               
+                for(i=0;i<10;i++) <br>
+                { <br>
+                    printf("%d ",i); <br>
+                }    <br>
+                
+              }<br>
+      </code>
+      <h5>Output</h5>
+      <code>
+          0 1 2 3 4 5 6 7 8 9</code>
+          <h5>EXAMPLE PROGRAM (WHILE LOOP) IN C:</h5>
+          <code>#include <stdio.h> <br>
+ 
+              int main()  <br>
+              {
+                int i=3; <br>
+               
+                while(i<10)  <br>
+                { <br>
+                   printf("%d\n",i); <br>
+                   i++;<br>
+                }    <br>
+               
+              }<br>
+            </code>
+            <h5>Output</h5>
+            <code>
+              
+             3 4 5 6 7 8 9
+            </code>
+            <h5>EXAMPLE PROGRAM (DO WHILE LOOP) IN C:</h5>
+            <code>
+                #include <stdio.h>  <br>
+ 
+                    int main()  <br>
+                    {   <br>
+                      int i=1;   <br>
+                     
+                      do      <br>
+                      {  
+                          printf("Value of i is %d\n",i);   <br>
+                          i++;   <br>
+                      }while(i<=4 && i>=2);  <br>    
+                     
+                    }   <br>
+            </code>
+            <h5>Output</h5>
+            <code>
+              
+             Value of i is 1 <br>
+             Value of i is 2 <br>
+             Value of i is 3 <br>
+             Value of i is 4 <br>
+            </code>
+    </section>
+    <section class="main-section" id="C_-_Case_Control_Statement">
+      <header>
+          <h1>C - Case Control Statement</h1>
+
+      </header>
+      <p>The statements which are used to execute only specific block of statements in a series of blocks are called case control statements.</p>\
+      <p>There are 4 types of case control statements in C language. They are,</p>
+      <ol><li>switch</li>
+      <li>break</li>
+      <li>continue</li>
+      <li>goto</li></ol>
+    </section>
+    <section class="main-section" id="C_-_Function">
+      <header>
+          <h1>C - Function</h1>
+
+      </header>
+      <p>C functions are basic building blocks in a program. All C programs are written using functions to improve re-usability, understandability and to keep track on them. </p>
+      <h5>WHAT IS C FUNCTION?</h5>
+      <p>A large C program is divided into basic building blocks called C function. C function contains set of instructions enclosed by “{  }” which performs specific operation in a C program. Actually, Collection of these functions creates a C program.</p>
+      <h5>. USES OF C FUNCTIONS:</h5>
+      <ul><li>C functions are used to avoid rewriting same logic/code again and again in a program.</li>
+      <li>There is no limit in calling C functions to make use of same functionality wherever required.</li>
+      <li>We can call functions any number of times in a program and from any place in a program.</li>
+      <li>A large C program can easily be tracked when it is divided into functions.</li></ul>
+    </section>
+    <section class="main-section" id="C_-_Pointer">
+      <header>
+          <h1>C - Pointer</h1>
+
+      </header>'
+       <ul><li>Pointers in C language is a variable that stores/points the address of another variable. A Pointer in C is used to allocate memory dynamically i.e. at run time. The pointer variable might be belonging to any of the data type such as int, float, char, double, short etc.</li>
+       <li>Pointer Syntax : data_type *var_name; Example : int *p;  char *p;</li>
+       <li>Where, * is used to denote that “p” is pointer variable and not a normal variable.</li></ul>
+       <h5>KEY POINTS TO REMEMBER ABOUT POINTERS IN C:</h5>
+       <ul>
+         <li>KEY POINTS TO REMEMBER ABOUT POINTERS IN C:</li>
+         <li>The content of the C pointer always be a whole number i.e. address.</li>
+         <li>Always C pointer is initialized to null, i.e. int *p = null.</li>
+         <li>The value of null pointer is 0.</li>
+         <li>& symbol is used to get the address of the variable</li>
+         <li>* symbol is used to get the value of the variable that the pointer is pointing to.</li>
+         <li>If a pointer in C is assigned to NULL, it means it is pointing to nothing.</li>
+         <li>Two pointers can be subtracted to know how many elements are available between these two pointers.</li>
+         <li>But, Pointer addition, multiplication, division are not allowed.</li>
+         <li>The size of any pointer is 2 byte (for 16 bit compiler).</li>
+       </ul>
+       <h5>EXAMPLE PROGRAM FOR POINTERS IN C:</h5>
+       <code>
+          #include <stdio.h> <br>
+              int main()  <br>
+              {  <br>
+                 int *ptr, q;   <br>
+                 q = 50;  <br>
+                 /* address of q is assigned to ptr */  <br>
+                 ptr = &q;  <br>
+                 /* display q's value using ptr variable */   <br>
+                 printf("%d", *ptr);   <br>
+                 return 0;   <br>
+              }  <br>
+       </code>
+       <h5>POINTERS IN C – PROGRAM OUTPUT:</h5>
+       <code>
+          50</code>
+    </section>
+    <section class="main-section" id="C_-_Arithmetic_Function">
+      <header>
+          <h1>C - Arithmetic Function</h1>
+
+      </header>
+      <ul><li>
+          C functions which are used to perform mathematical operations in a program are called Arithmetic functions.</li>
+      <li>Example program for abs(), floor(), round(), ceil(), sqrt(), exp(), log(), sin(), cos(), tan(), pow() and trunc() functions are given below.</li>
+      <li>If you want to know what is the structure and declaration of a C function, Please refer “C Functions“ topic in this tutorial.</li></ul>
+      <h5>LIST OF INBUILT ARITHMETIC FUNCTIONS IN C LANGUAGE:</h5>
+      <table border="1">
+        <tr>
+          <th>Function</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>abs ( )</td>
+          <td>	This function returns the absolute value of an integer. The absolute value of a number is always positive. Only integer values are supported in C.</td>
+        </tr>
+        <tr>
+          <td>floor ( )</td>
+          <td>This function returns the nearest integer which is less than or equal to the argument passed to this function.</td>
+        </tr>
+        <tr>
+          <td>round ( )</td>
+          <td>This function returns the nearest integer value of the float/double/long double argument passed to this function. If decimal value is from “.1 to .5”, it returns integer value less than the argument. If decimal value is from “.6 to .9”, it returns the integer value greater than the argument.</td>
+        </tr>
+        <tr>
+          <td>ceil ( )</td>
+          <td>This function returns nearest integer value which is greater than or equal to the argument passed to this function.</td>
+        </tr>
+        <tr>
+         <td>sin ( )</td>
+         <td>This function is used to calculate sine value.</td>           
+       </tr>
+       <tr>
+        <td>cos ( )</td>
+        <td>This function is used to calculate cosine.</td>
+        </tr>
+        <tr>
+         <td>pow ( )</td>
+         <td>This is used to find the power of the given number.</td>
+        </tr>
+        <tr>
+            <td>sqrt ( )</td>
+            <td>This function is used to find square root of the argument passed to this function.</td>
+        </tr>
+        <tr>
+            <td>log10 ( )</td>
+            <td>This function is used to calculates base 10 logarithm.</td>
+        </tr>
+                    
+        <tr>
+            <td>log ( )</td>
+            <td>This function is used to calculates natural logarithm.</td>
+        </tr>
+      </table>
+    </section>
+   
+  </main>
+  </div>
+</body>
+</html>
